@@ -206,7 +206,6 @@ body {
     display: flex;
   }
 
-<<<<<<< HEAD
   .experts{
     display: flex;
     align-items: center;
@@ -281,11 +280,12 @@ body {
 }
 
 
-}
 
+}
 .cardSection{
   padding-top: 127px;
-=======
+}
+
 /* call to action section --ameer/dev */
 .one {
   background: #7c30f7;
@@ -317,12 +317,10 @@ body {
 
 .action {
   background-color: var(--background-two);
->>>>>>> c9a432368832a986a3aba7d1ee940add42f53ec2
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-<<<<<<< HEAD
   gap: 208px;
 }
 
@@ -392,8 +390,7 @@ body {
   }
 
   
-=======
-  padding: 3rem 0px 5.5rem 0px;
+
 }
 
 
