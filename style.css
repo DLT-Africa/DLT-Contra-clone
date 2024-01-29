@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Cormorant+SC:wght@300;400;500&family=Inter:wght@500&family=Maven+Pro:wght@400;500;600&family=Montserrat:wght@500&family=Poppins:wght@600&display=swap');
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-white : #ffffff;
+    --background-two : #d1d1d1;
+    --framer-bg : #2f41ff;
+    --card-bg : #3d3d3d;
+    --font-color : #3d3d3d;
+
+    /* button */
+    --nav-btn-color : #4f4f4f;
+    --nav-btn-bg : #6d6d6d;
+    
+    /* primary button */
+    --primary-btn-font-size: 18px;
+    --primary-btn-font-weight: 500;
+    --primary-btn-border-radius: 30px;
+    --primary-btn-padding: 10px;
+    --primary-btn-one: #b0b0b0;
+    --primary-btn-one-border: #b0b0b0;
+
+    --primary-btn-two: #3d3d3d;
+    --primary-btn-two-border: #3d3d3d;
+
+    /* search bar */
+    --search-bar-btn-bg : #9462ff;
+    --search-bar-btn-border-radius : 50px;
+    --search-bar-btn-border : 1px solid #faff07;
+    --search-bar-btn-text-color : #efefef;
+    --search-bar-btn-text-size : 20px;
+    --search-bar-btn-icon : 24px;
+
+    /* figma btn */
+    --padding-figma: 35px 50px;
+    --border-radius-figma : 10px;
+    --arrow-right-color : #374957;
+
+    /* general style */
+    --general-para-size: 20px;
+
+    
+}
