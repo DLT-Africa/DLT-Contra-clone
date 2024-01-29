@@ -40,6 +40,7 @@
 
   /* figma btn */
   --padding-figma: 35px 50px;
+  --padding-figma-small: 15px 25px;
   --border-radius-figma: 10px;
   --arrow-right-color: #374957;
 
@@ -205,6 +206,86 @@ body {
     display: flex;
   }
 
+<<<<<<< HEAD
+  .experts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 178px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .experts > p {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .figmaCon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.figma{
+    border: #374957 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+    padding: var(--padding-figma);
+    border-radius: var(--border-radius-figma);
+}
+
+.figma > p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: larger;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px){
+  .experts{
+    height: 154px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .figmaCon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    gap: 29px;
+}
+
+  .figma{
+  
+    padding: var(--padding-figma-small);
+}
+
+.figma > p {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.figma > img {
+  height: 3rem;
+}
+
+
+}
+
+.cardSection{
+  padding-top: 127px;
+=======
 /* call to action section --ameer/dev */
 .one {
   background: #7c30f7;
@@ -236,10 +317,82 @@ body {
 
 .action {
   background-color: var(--background-two);
+>>>>>>> c9a432368832a986a3aba7d1ee940add42f53ec2
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+<<<<<<< HEAD
+  gap: 208px;
+}
+
+.cardSection > h2 {
+  font-size: 64px;
+  font-family: 'Inter', sans-serif;
+}
+
+.cardSection > h2 > span {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.cardSection > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 115px;
+  margin-right:115px ;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.cardSection > div > img{
+  width: 250px;
+  height: 406px;
+  transition: transform 250ms ease-out;
+}
+
+.cardSection > div > img:hover{
+  transform: scale(1.05);
+ 
+}
+
+@media screen and (max-width: 992px) {
+
+  .cardSection{
+ 
+    gap: 45px;
+  }
+
+  .cardSection > div > img{
+    width: 150px;
+    height: 206px;
+    transition: transform 250ms ease-out;
+  }
+
+  .cardSection > h2 {
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .experts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 108px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .cardSection > div > img{
+    width: 150px;
+    height: 206px;
+  }
+
+  
+=======
   padding: 3rem 0px 5.5rem 0px;
 }
 
@@ -491,4 +644,5 @@ line-height: normal;
   }
 
 
+>>>>>>> c9a432368832a986a3aba7d1ee940add42f53ec2
 }
