@@ -1,50 +1,400 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Cormorant+SC:wght@300;400;500&family=Inter:wght@500&family=Maven+Pro:wght@400;500;600&family=Montserrat:wght@500&family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Cormorant+SC:wght@300;400;500&family=Inter:wght@500&family=Maven+Pro:wght@400;500;600&family=Montserrat:wght@500&family=Poppins:wght@600&display=swap");
 
 * {
-    border: none;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 :root {
-    --main-bg-white : #ffffff;
-    --background-two : #d1d1d1;
-    --framer-bg : #2f41ff;
-    --card-bg : #3d3d3d;
-    --font-color : #3d3d3d;
+  --main-bg-white: #ffffff;
+  --background-two: #d1d1d1;
+  --framer-bg: #2f41ff;
+  --card-bg: #3d3d3d;
+  --font-color: #3d3d3d;
 
-    /* button */
-    --nav-btn-color : #4f4f4f;
-    --nav-btn-bg : #6d6d6d;
-    
-    /* primary button */
-    --primary-btn-font-size: 18px;
-    --primary-btn-font-weight: 500;
-    --primary-btn-border-radius: 30px;
-    --primary-btn-padding: 10px;
-    --primary-btn-one: #b0b0b0;
-    --primary-btn-one-border: #b0b0b0;
+  /* button */
+  --nav-btn-color: #4f4f4f;
+  --nav-btn-bg: #6d6d6d;
 
-    --primary-btn-two: #3d3d3d;
-    --primary-btn-two-border: #3d3d3d;
+  /* primary button */
+  --primary-btn-font-size: 18px;
+  --primary-btn-font-weight: 500;
+  --primary-btn-border-radius: 30px;
+  --primary-btn-padding: 10px;
+  --primary-btn-one: #b0b0b0;
+  --primary-btn-one-border: #b0b0b0;
 
-    /* search bar */
-    --search-bar-btn-bg : #9462ff;
-    --search-bar-btn-border-radius : 50px;
-    --search-bar-btn-border : 1px solid #faff07;
-    --search-bar-btn-text-color : #efefef;
-    --search-bar-btn-text-size : 20px;
-    --search-bar-btn-icon : 24px;
+  --primary-btn-two: #3d3d3d;
+  --primary-btn-two-border: #3d3d3d;
 
-    /* figma btn */
-    --padding-figma: 35px 50px;
-    --border-radius-figma : 10px;
-    --arrow-right-color : #374957;
+  /* search bar */
+  --search-bar-btn-bg: #9462ff;
+  --search-bar-btn-border-radius: 50px;
+  --search-bar-btn-border: 1px solid #faff07;
+  --search-bar-btn-text-color: #efefef;
+  --search-bar-btn-text-size: 20px;
+  --search-bar-btn-icon: 24px;
 
-    /* general style */
-    --general-para-size: 20px;
+  /* figma btn */
+  --padding-figma: 35px 50px;
+  --border-radius-figma: 10px;
+  --arrow-right-color: #374957;
 
-    
+  /* general style */
+  --general-para-size: 20px;
 }
+
+body {
+  background-color: var(--main-bg-white);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-bg-white);
+  height: 138px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 50px 20px 29px 20px;
+  z-index: 1;
+  box-shadow: 0px 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: #1c1c1c;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 36px;
+  align-items: center;
+  font-family: "Cormorant SC";
+  font-weight: 700;
+}
+
+.mainNav .navBtn {
+  display: none;
+}
+
+
+.mainNavList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--primary-btn-two);
+  gap: 10px;
+  font-size: 18px;
+}
+
+.mainItem a {
+  text-decoration: none;
+  color: var(--primary-btn-two);
+  font-weight: 500;
+}
+
+.navBtn {
+  display: flex;
+  gap: 10px;
+  font-size: var(--primary-btn-font-size);
+}
+
+.btn,
+.btnlink,
+.btn:visited {
+  display: flex;
+  width: 195px;
+  height: 59px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hire:link,
+.hire:visited {
+  border: 1px solid #1c1c1c;
+  color: var(--nav-btn-color);
+  font-family: "Inter", sans-serif;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hire:hover,
+.hire:active {
+  color: #1c1c1c;
+  background-color: #f5f2ec;
+}
+
+.signUp:link,
+.signUp:visited {
+  background-color: var(--nav-btn-color);
+  color: var(--search-bar-btn-text-color);
+  font-family: "Inter", sans-serif;
+}
+
+.signUp:hover,
+.signUp:active {
+  background-color: var(--main-bg-white);
+  color: var(--nav-btn-color);
+}
+
+.login:link,
+.loginB:visited {
+  border: 1px solid #1c1c1c;
+  height: 59px;
+  width: 120px;
+  color: #1c1c1c;
+  font-family: "Inter", sans-serif;
+}
+
+.login:hover,
+.login:active {
+  color: #1c1c1c;
+  background-color: #f5f2ec;
+}
+
+/* MOBILE NAV BUTTON */
+
+.btn-mobile-nav {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #000000;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+
+
+
+.heroSection {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHero {
+  display: flex;
+  align-items: center;
+  padding: 91px 223px 90px 224px;
+  background-color: var(--main-bg-white);
+  flex-direction: column;
+  width: 1281px;
+}
+
+.heroBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 84px;
+}
+
+.heroFels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroFelsOne {
+  /* Poppins Font/Semi-bold */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heroFelsTwo {
+  color: #888;
+
+  /* Poppins Font/Semi-bold */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heroFelsOne span {
+  background: linear-gradient(
+    92deg,
+    #3d3d3d 17.52%,
+    rgba(220, 212, 255, 0.7) 37.65%,
+    rgba(166, 133, 255, 0.6) 47.26%,
+    rgba(215, 143, 188, 0.9) 91.43%,
+    rgba(231, 186, 215, 0.7) 105.54%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroFrelsTwo {
+  color: var(--Black-400, #888);
+
+  /* Poppins Font/Semi-bold */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heroText {
+  width: 95%;
+}
+
+h1 {
+  color: var(--Black-900, #3d3d3d);
+  text-align: center;
+
+  /* Cormorant SC,Header text/Bold128 */
+  font-family: "Cormorant SC";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heroText p {
+  color: var(--Black-400, #888);
+  text-align: center;
+
+  /* Garamond/Bold */
+  font-family: "Cormorant Garamond";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 30px 0;
+}
+
+/* To hide the checkbox */
+#checkboxInput {
+  display: none;
+}
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  left: 0px;
+  right: 0;
+  /* background: conic-gradient(rgb(104, 104, 104),white,rgb(104, 104, 104),white,rgb(104, 104, 104)); */
+  background-color: #fff;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+  box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.308);
+}
+
+#checkboxInput:checked + .toggleSwitch::after {
+  transform: translateX(100%);
+  transition-duration: 0.3s;
+}
+/* Switch background change */
+#checkboxInput:checked + .toggleSwitch {
+  background-color: #000;
+  transition-duration: 0.3s;
+}
+
+.inputCon {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+.searchInp {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #faff07;
+}
+
+.searchInp input,
+button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: #b0b0b0;
+}
+
+.searchInp .getBtn {
+  width: 195px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #9462ff;
+  cursor: pointer;
+}
+
+button a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.heroInp {
+  display: flex;
+  flex-direction: column;
+  width: 971px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
