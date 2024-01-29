@@ -49,7 +49,6 @@
 
 body {
   background-color: var(--main-bg-white);
-
 }
 
 .header {
@@ -74,14 +73,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .logo h2 {
-    font-size: 36px;
-    align-items: center;
-    font-family: "Cormorant SC";
-    font-weight: 700;
+  font-size: 36px;
+  align-items: center;
+  font-family: "Cormorant SC";
+  font-weight: 700;
+}
+
+.mainNav .navBtn {
+  display: none;
 }
 
 
@@ -94,22 +96,18 @@ body {
   color: var(--primary-btn-two);
   gap: 10px;
   font-size: 18px;
-  
-  
 }
 
-.mainItem a{
-    text-decoration: none;
-    color: var(--primary-btn-two);
-    font-weight: 500;
-    
+.mainItem a {
+  text-decoration: none;
+  color: var(--primary-btn-two);
+  font-weight: 500;
 }
 
 .navBtn {
-    display: flex;
-    gap: 10px;
-    font-size: var(--primary-btn-font-size)
-    
+  display: flex;
+  gap: 10px;
+  font-size: var(--primary-btn-font-size);
 }
 
 .btn,
@@ -132,8 +130,6 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-
-
 
 .hire:link,
 .hire:visited {
@@ -168,38 +164,237 @@ body {
 
 .login:link,
 .loginB:visited {
-    border: 1px solid #1c1c1c;
-    height: 59px;
-    width: 120px;
-    color: #1c1c1c;
-    font-family: "Inter", sans-serif;
+  border: 1px solid #1c1c1c;
+  height: 59px;
+  width: 120px;
+  color: #1c1c1c;
+  font-family: "Inter", sans-serif;
 }
 
 .login:hover,
 .login:active {
-    color: #1c1c1c;
-    background-color: #f5f2ec;
+  color: #1c1c1c;
+  background-color: #f5f2ec;
 }
 
-.mobileDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* MOBILE NAV BUTTON */
 
 .btn-mobile-nav {
-    cursor: pointer;
-    background: none;
-    border: none;
-    display: none;
-  }
-  
-  .icon-mobile-nav {
-    width: 3.8rem;
-    height: 3.8rem;
-    color: #000000;
-  }
-  
-  .icon-mobile-nav[name="close-outline"] {
-    display: flex;
-  }
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #000000;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+
+
+
+.heroSection {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHero {
+  display: flex;
+  align-items: center;
+  padding: 91px 223px 90px 224px;
+  background-color: var(--main-bg-white);
+  flex-direction: column;
+  width: 1281px;
+}
+
+.heroBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 84px;
+}
+
+.heroFels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroFelsOne {
+  /* Poppins Font/Semi-bold */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heroFelsTwo {
+  color: #888;
+
+  /* Poppins Font/Semi-bold */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heroFelsOne span {
+  background: linear-gradient(
+    92deg,
+    #3d3d3d 17.52%,
+    rgba(220, 212, 255, 0.7) 37.65%,
+    rgba(166, 133, 255, 0.6) 47.26%,
+    rgba(215, 143, 188, 0.9) 91.43%,
+    rgba(231, 186, 215, 0.7) 105.54%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroFrelsTwo {
+  color: var(--Black-400, #888);
+
+  /* Poppins Font/Semi-bold */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.heroText {
+  width: 95%;
+}
+
+h1 {
+  color: var(--Black-900, #3d3d3d);
+  text-align: center;
+
+  /* Cormorant SC,Header text/Bold128 */
+  font-family: "Cormorant SC";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heroText p {
+  color: var(--Black-400, #888);
+  text-align: center;
+
+  /* Garamond/Bold */
+  font-family: "Cormorant Garamond";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 30px 0;
+}
+
+/* To hide the checkbox */
+#checkboxInput {
+  display: none;
+}
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  left: 0px;
+  right: 0;
+  /* background: conic-gradient(rgb(104, 104, 104),white,rgb(104, 104, 104),white,rgb(104, 104, 104)); */
+  background-color: #fff;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+  box-shadow: 5px 2px 7px rgba(8, 8, 8, 0.308);
+}
+
+#checkboxInput:checked + .toggleSwitch::after {
+  transform: translateX(100%);
+  transition-duration: 0.3s;
+}
+/* Switch background change */
+#checkboxInput:checked + .toggleSwitch {
+  background-color: #000;
+  transition-duration: 0.3s;
+}
+
+.inputCon {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+.searchInp {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #faff07;
+}
+
+.searchInp input,
+button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: #b0b0b0;
+}
+
+.searchInp .getBtn {
+  width: 195px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #9462ff;
+  cursor: pointer;
+}
+
+button a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.heroInp {
+  display: flex;
+  flex-direction: column;
+  width: 971px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+

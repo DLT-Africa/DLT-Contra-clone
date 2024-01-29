@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contra-clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <header class="header">
-    <a href="" class="logo">
-        <img src="/image/nav-logo.png" alt="">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="logo">
+        <img src="/image/nav-logo.png" alt="" />
         <h2>Contra</h2>
-    </a>
-    <nav class="mainNav">
+      </a>
+      <nav class="mainNav">
         <ul class="mainNavList">
-           <li class="mainItem"><a href="#">For Freelanc</a></li>
-           <li class="mainItem"><a href="#">For Hire</a></li>
-           <li class="mainItem"><a href="#">Why contra</a></li>
+          <li class="mainItem"><a href="#">For Freelance</a></li>
+          <li class="mainItem"><a href="#">For Hire</a></li>
+          <li class="mainItem"><a href="#">Why contra</a></li>
 
-          
+          <ul class="navBtn">
+            <a href="#" class="btn hire">Hire on Contra</a>
+    
+            <a href="#" class="btn signUp">Sign up</a>
+    
+            <a href="#" class="btn login">Login</a>
+          </ul>
         </ul>
-    </nav>
 
-    <ul class="navBtn">
-        <a href="#" class="btn hire ">Hire on Contra</a>
+        
+  
+      </nav>
+      
+      
 
-        <a href="#" class="btn signUp">Sign up</a>
+      <div class="mobileDiv">
+        <div class="navBtn">
+          <a href="#" class="btn hire">Hire on Contra</a>
+          <a href="#" class="btn signUp">Sign up</a>
 
-        <a href="#" class="btn login">Login</a>
-      </ul>
-
-    <div class="mobileDiv">
-        <!-- <div class="navBtn">
-          <a href="#" class="btn loginButton">Login</a>
-
-          <a href="/form.html" class="btn signupButton">sign up</a>
-        </div> -->
+          <a href="#" class="btn login">Login</a>
+        </div>
 
         <div class="btn-mobile-nav">
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
           <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </div>
       </div>
-     
-   </header>
+    </header>
     <main>
-        
+      <section class="heroSection">
+        <div class="mainHero">
+          <div class="heroBox">
+            <div class="heroFels">
+              <p class="heroFelsOne">FOR <span>HIRING</span> </p>
+            
+              <input id="checkboxInput" type="checkbox">
+              <label class="toggleSwitch" for="checkboxInput">
+              </label>
+            
+           
+            <p class="heroFelsTwo">FOR FREELANCERS</p>
+            </div>
+            
+
+            <div class="heroText">
+              <h1>How the world’s best teams flex</h1>
+              <p>The all-in-one platform to find and manage flexible talent</p>
+            </div>
+          </div>
+
+          <div class="heroInp">
+            <div class="inputCon">
+              <form action="" class="searchInp">
+                <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                <input type="text" placeholder="Try brand design, blog articles, or Framer website..." name="search">
+                <button class="getBtn"><a href="#">Get started</a></button>
+              </form>
+            </div>
+            <div class="heroBt">
+              <button>Popular</button>
+            
+              <button>Web Design</button>
+              <button>Social Content</button>
+              <button>Framer Development</button>
+              <button>Canva Design</button></div>
+          </div>
+          </div>
+         
+      </section>
     </main>
-    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
