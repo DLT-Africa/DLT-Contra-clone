@@ -349,16 +349,39 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
   gap: 30px;
+  background-image: linear-gradient(to right, rgba(250, 255, 7, 0.2), rgba(200, 108, 162, 0.2), rgba(250, 130, 111, 0.2), rgba(220, 212, 255, 0.2), rgba(166, 133, 255, 0.2), rgba(166, 133, 255, 0.2));
+  border: none;
+  padding: 5px;
+  border-radius: 50px;
+  content: '';
+
 }
 
-.searchInp {
+.inputCon > div {
+  background-image: linear-gradient(to right, rgba(232, 93, 4, 0.6), rgba(143, 55, 106, 0.6), rgba(154, 39, 22, 0.6),rgb(155, 138, 232, 0.6), rgba(82, 13, 147, 0.6), rgba(60, 9, 108, 0.6));
+  border-radius: 50px;
+  padding: 1px;
   width: 100%;
-  max-width: 700px;
+
+}
+
+ .searchInp {
+  width: 100%;
   display: flex;
   align-items: center;
   border-radius: 50px;
-  border: 1px solid #faff07;
+  background-color: var(--main-bg-white);
+  padding: 5px;
+  color:#b0b0b0 ;
+}
+
+.searchInp > div {
+ flex-basis: 80%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .searchInp input,
@@ -368,7 +391,23 @@ button {
   outline: none;
   padding: 5px 20px;
   font-size: 18px;
+  color: #757373;
+
+}
+
+.searchInp input{
+  width: 100%;
+  font-size: small;
+}
+
+.searchInp input::placeholder{
   color: #b0b0b0;
+}
+
+
+
+.searchInp .submit{
+  padding: 5px;
 }
 
 .searchInp .getBtn {
@@ -379,13 +418,15 @@ button {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 50px;
-  background: #9462ff;
+  background: #9462FF;
   cursor: pointer;
+  
 }
 
 button a {
   list-style-type: none;
   text-decoration: none;
+  color: var(--background-two);
 }
 
 .heroInp {
@@ -406,6 +447,24 @@ button a {
 .icon-mobile-nav[name="close-outline"] {
   display: flex;
 }
+
+.heroBt > button{
+  font-size: small;
+  border: #B0B0B0 1px solid;
+  border-radius: 50px;
+  color: #B0B0B0;
+ 
+}
+
+.heroBt > button:hover{
+  border-color: #484848;
+}
+
+.heroBt > #pop{
+  border: none;
+}
+
+
 
 /* Mento Ntech end */
 
