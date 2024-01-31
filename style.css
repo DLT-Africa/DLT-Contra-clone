@@ -386,9 +386,7 @@ p {
     flex-direction: column;
     width: 100%;
    
-  }
-
-  
+  }  
 }
 
 @media screen and (max-width: 480px) {
@@ -398,11 +396,13 @@ p {
     padding: 1rem;
     border-radius: 25px;
   }
+  
   .cardOne{
     padding: 20px;
     justify-content: left;
     background-color: transparent;
   }
+  
   .cardOne > h3{
     font-size: 14px;
     text-align: left;
@@ -431,14 +431,12 @@ p {
 @media screen and (max-width: 992px){
   .cardOne {
     width: 100%;
-  
   }
 
   .cardOne > h3{
     font-size: 40px;
   }
 
- 
   .cardTwo {
     width: 100%;
   }
