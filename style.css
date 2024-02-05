@@ -566,20 +566,23 @@ footer {
   bottom: 0px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding-bottom: 10rem;
   background-image: url(/image/Frame\ 91@2x.png);
   background-repeat: no-repeat;
-  background-size: 100mm;
-  background-position: calc(100% - 10px) calc(100% - 10px);
-  padding: 84px 0px 0px 0px;
+  background-size: 80mm;
+  background-position: calc(110% - 10px) calc(100% - 10px);
+  padding: 94px 65px ;
 }
 
 .footer-wrapper {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   max-width: 1320px;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 /*? footer columns */
@@ -840,3 +843,4 @@ footer {
     height: 206px;
   }
 }
+
