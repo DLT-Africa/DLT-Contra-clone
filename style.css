@@ -1004,11 +1004,8 @@ button a {
 
 /* Mento Ntech end */
 
-  
-  
-  
-  
-  
+
+
 /* call to action section --ameer/dev */
 .one {
   background: #7c30f7;
@@ -1243,62 +1240,13 @@ footer {
   min-width: 150px;
 }
 
-@media screen and (max-width: 1200px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .card:nth-child(2) {
-    order: 5;
-  }
-
-  .card:nth-child(3) {
-    order: 6;
-  }
-
-  .mt-minus {
-    margin-top: unset;
-  }
-}
-@media screen and (max-width: 860px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .action {
-    /* border: 2px solid; */
-    padding: unset;
-    padding-bottom: 10rem;
-  }
-
-  .wrapper span {
-    font-size: 25px;
-    font-weight: 500;
-  }
-
-  .wrapper .spanTwo {
-    font-size: 20px;
-  }
-
-  .lower-wrapper {
-    padding: 1em;
-  }
-  .lower-wrapper .image-wrapper img {
-    width: 50px;
-    height: 50px;
-  }
-}
 /* Ameer===end */
 
 
 
-  
-  
-  
-  
-  
+
+
 /* Anate */
 
 .experts {
@@ -1805,4 +1753,3 @@ h6 > span {
     padding-inline: 16px;
   }
 }
-
