@@ -291,13 +291,13 @@ body {
   gap: 10px;
 }
 
-.heroFelsOne p{
+/* .heroFelsOne p{
   font-family: "Poppins";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-}
+} */
 
 
 .heroFelsOne span {
@@ -600,6 +600,8 @@ h1 {
   margin: 30px 0;
 }
 
+  
+  
 /* To hide the checkbox */
 #checkboxInput {
   display: none;
@@ -625,7 +627,6 @@ h1 {
   width: 35px;
   left: 0px;
   right: 0;
-  /* background: conic-gradient(rgb(104, 104, 104),white,rgb(104, 104, 104),white,rgb(104, 104, 104)); */
   background-color: #fff;
   border-radius: 50%;
   transition-duration: 0.5s;
@@ -641,6 +642,52 @@ h1 {
   background-color: #000;
   transition-duration: 0.3s;
 }
+
+
+.heroFrelsTwo {
+  color: var(--Black-400, #888);
+
+  /* Poppins Font/Semi-bold */
+  font-family:" Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+ 
+
+h1 {
+  color: var(--Black-900, #3d3d3d);
+  text-align: center;
+  font-family: "Cormorant SC";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heroText p {
+  color: var(--Black-400, #888);
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 30px 0;
+}
+
+
+.heroInp {
+  display: flex;
+  flex-direction: column;
+  width: 971px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
 
 .inputCon {
   display: flex;
@@ -693,6 +740,8 @@ button {
 
 }
 
+
+
 .searchInp input{
   width: 100%;
   font-size: small;
@@ -724,17 +773,9 @@ button {
 button a {
   list-style-type: none;
   text-decoration: none;
-  color: var(--background-two);
+  color: var(--background-two); 
 }
 
-.heroInp {
-  display: flex;
-  flex-direction: column;
-  width: 971px;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
-}
 
 
 @media (max-width: 991px) {
@@ -795,6 +836,7 @@ button a {
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
+
   
   .heroSection {
     margin-top: 5rem;
